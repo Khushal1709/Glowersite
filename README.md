@@ -1,2 +1,2 @@
 # Glowersite
-Glower is a product which provides multiple creams and face washes.
+Glower which provides multiple creams and face washes.
