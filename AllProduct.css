@@ -1,0 +1,466 @@
+/* Main container */
+.care-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #f9f9f9; /* Light background */
+    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+    width: 100%; /* Full width of the container */
+    max-width: 1200px; /* Optional: Limit max width */
+    margin: auto; /* Center alignment */
+  }
+  
+  /* Left Images Section */
+  .care-images-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between images */
+    position: relative;
+  }
+  
+  .care-images-left .img1 {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .care-images-left .img2 {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+
+  /* Ensure the parent container is responsive */
+.mx-auto {
+  width: 100%; /* Full width of the container */
+  max-width: 1200px; /* Optional: Limit max width */
+  margin: auto; /* Center alignment */
+}
+
+/* Style for the image */
+.responsive-img {
+  width: 100%; /* Image will take full width of its container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensures the image fills the container while preserving aspect ratio */
+ /* Optional styling for rounded corners */
+}
+
+  
+
+  
+  .care-text h1 {
+    font-size: 2.5rem;
+  }
+  
+  .care-text p {
+    margin-top: 10px;
+  }
+  
+
+  /* Right Images Section */
+  .care-images-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between images */
+  }
+  
+  .care-images-right .img3,
+  .care-images-right .img4 {
+    width: 150px;
+    height: auto;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .care-section {
+      flex-direction: column; /* Stack sections vertically on smaller screens */
+      align-items: center; /* Center align all sections */
+      gap: 30px; /* Add spacing between sections */
+      padding: 20px; /* Reduce padding for smaller screens */
+      text-align: center;
+      overflow-x:hidden
+  }
+  }  
+
+
+
+
+/* fest sessione */
+
+
+  /* Main container for the images */
+.image-container {
+    position: relative; /* Set parent container to relative */
+    width: 300px; /* Adjust width as needed */
+    margin: auto;
+  }
+  
+  /* Larger background image */
+  .image-container .main-img {
+    width: 100%; /* Ensure responsiveness */
+    border-radius: 10px; /* Optional styling */
+  }
+  
+  .main-img2 {
+    width: 50%; /* Ensure responsiveness */
+    border-radius: 10px  10px  0px  10px ; /* Optional styling */
+    z-index: 2;
+  }
+
+  /* Smaller overlay images */
+  .image-container .overlay-img {
+    position: absolute; /* Position relative to the parent container */
+    width: 80px; /* Adjust size as needed */
+   
+  }
+  
+  .image-container .overlay-img1 {
+    top: 430px;
+    left: 290px;
+    width: 174px;
+    border-radius: 10px;
+    border-radius: 10px;
+  }
+  
+  .image-container .overlay-img2 {
+    top: 210px;
+    
+    width: 214px;
+    border-radius: 10px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .image-container {
+      width: 100%; /* Make container responsive */
+    }
+  
+    .image-container .overlay-img {
+      width: 60px; /* Scale down overlay images for smaller screens */
+    }
+  }
+  
+
+  /* Main container */
+.care-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: #f9f9f9; /* Light background */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Left and Right Images Section */
+.image-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between images */
+}
+
+.main-img {
+  width: 100%;
+  max-width: 300px; /* Adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional styling */
+}
+
+.overlay-img {
+  position: absolute;
+  width: 100px; /* Adjust size as needed */
+}
+
+.overlay-img1 {
+  top: -20px;
+  left: -30px;
+}
+
+.overlay-img2 {
+  bottom: -20px;
+}
+
+/* Center Text Section */
+.care-text {
+  text-align: center;
+  max-width: 300px; /* Limit text width */
+}
+
+.care-text h1 {
+  font-size: clamp(1.5rem, 2.5vw, 2.5rem); /* Responsive font size */
+}
+
+.care-text p {
+  margin-top: 10px;
+}
+
+.care-button {
+  position: absolute; /* Positioned relative to the parent container */
+  bottom: -10px; /* Adjust vertical placement */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center alignment */
+
+  width: 108px; /* Fixed width */
+  height: 72px; /* Fixed height */
+  
+  background-color: #0077b6; /* Blue background color */
+  color: white; /* White text color */
+  
+  border-radius: 10px; /* Rounded corners for smooth edges */
+
+  
+  font-size: 16px; /* Font size for readability */
+  line-height: 23px; /* Line height for proper vertical alignment of text */
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+}
+
+.care-button:hover {
+  background-color: #005f8a; /* Darker blue on hover */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .care-section {
+    flex-direction: column; /* Stack sections vertically on smaller screens */
+    align-items: center; /* Center align all sections */
+    gap: 30px; /* Add spacing between sections */
+    padding: 20px; /* Reduce padding for smaller screens */
+    text-align: center;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+
+  .image-container {
+    width: auto; /* Allow containers to shrink on smaller screens */
+    align-items: center;
+    justify-content: center;
+    gap: unset; /* Reset gaps for better stacking on mobile */
+    position: relative;
+    margin-bottom: 20px; /* Add spacing between stacked sections */
+}
+.overlay-img1{
+  display: none;
+}
+}
+
+
+
+/* silde prodect */
+
+.care-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px; /* Add spacing */
+}
+
+@media (max-width: 768px) {
+  .care-button {
+      font-size: 0.9rem; /* Smaller button text */
+      padding: 8px 16px;
+  }
+}
+.overlay-img1 {
+  top: 50%; /* Center dynamically */
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+  .overlay-img1 {
+      display: none; /* Hide on small screens */
+  }
+}
+@media (max-width: 768px) {
+  .care-section {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 30px; /* Add spacing between stacked sections */
+      padding: 20px; /* Reduce padding */
+  }
+}
+
+
+.product-carousel {
+  padding: 20px;
+}
+
+.product-carousel h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.swiper-wrapper {
+  display: flex;
+  transition-duration: 300ms; /* Smooth transition */
+  transform: translate3d(0, 0, 0); /* Reset initial position */
+}
+
+.swiper-slide {
+  flex-shrink: 0; /* Prevent shrinking */
+  width: auto; /* Allow dynamic width */
+}
+
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .swiper-slide {
+    display: block; /* Ensure slides are visible */
+    width: auto; /* Adjust to fit container */
+    margin-left: auto;
+    margin-left: auto;
+  }
+}
+
+
+
+.product-card {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+
+}
+
+/* Skin Tone Face Cream  Clarifying Face Cream  */
+.care-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: #f9f9f9; /* Light background */
+  flex-wrap: wrap; /* Wrap content on smaller screens */
+  max-width: 1200px;
+  margin: auto; /* Center alignment */
+}
+
+.care-images-left,
+.care-images-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.care-text {
+  text-align: center;
+  max-width: 300px; /* Limit text width */
+}
+
+.care-text h1 {
+  font-size: clamp(1.5rem, 2.5vw, 2.5rem); /* Responsive font size */
+}
+
+.care-text p {
+  margin-top: 10px;
+}
+
+.main-img {
+  width: auto; /* Maintain aspect ratio */
+  max-width: calc(100% - 20px); /* Ensure responsiveness */
+  border-radius: 10px; /* Rounded corners */
+}
+
+
+
+.image-container {
+  position: relative; /* Set parent container to relative */
+}
+
+.main-img {
+  width: auto; /* Maintain aspect ratio */
+  max-width: calc(100% - 20px); /* Ensure responsiveness */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.care-button {
+  position: absolute; /* Position relative to parent container */
+  bottom: 0px;
+  left: 111%;
+  transform: translateX(-50%); /* Adjust alignment */
+  
+  padding: 10px 20px;
+  background-color: rgb(13 148 136 / var(--tw-bg-opacity, 1)); /* Blue button */
+  color: white;
+  border-radius:  0px 10px 10px 0px ;
+  
+  font-size: clamp(0.9rem, 1vw, 1rem); /* Responsive font size */
+  
+}
+
+
+.care-button2 {
+  position: relative;
+  top: -430.1px;
+  left: -54.6px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+      text-align: center;
+    max-width: 300px;
+
+}
+
+
+
+.overlay-img {
+  position: absolute; /* Position relative to parent container */
+  top: -20px;
+  left: -30px;
+}
+@media (max-width: 768px) {
+  .care-section {
+    flex-direction: column; /* Stack sections vertically on smaller screens */
+    align-items: center; /* Center-align all sections */
+    gap: 30px; /* Add spacing between sections */
+    padding: 20px; /* Reduce padding for smaller screens */
+    text-align: center; /* Center-align text content */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+
+ .image-container {
+   width:auto ;
+   margin-bottom :10 px;}
+}
+
+
+.care-button:hover {
+  background-color: #005f8a; /* Darker blue on hover */
+}
+
+
+.image-container {
+  position: relative; /* Parent container is positioned relative */
+}
+
+.overlay-img {
+  position: absolute; /* Positioned relative to parent container */
+}
+.overlay-img {
+  position: absolute;
+  top: -20px;
+  left: -30px;
+}
+
+
+.care-button {
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}

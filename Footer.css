@@ -1,0 +1,121 @@
+.footer {
+    background-color: #f8f9fa;
+    color: #1d1b91;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+    border-top: 1px solid #ddd;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 20px;
+  }
+  
+  .footer-logo-social {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    padding-left: 70px;
+  }
+  .social-img{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+    margin-top: 30px; 
+
+  }
+  
+  .social-icons a {
+    color: #333333;
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-flex; 
+    align-items: center;
+  }
+  
+  .social-icons a:hover {
+    color: #007bff;
+  }
+  
+  
+  .footer-links {
+    flex: 2;
+    line-height: 2;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .footer-links h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .footer-links ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .footer-links ul li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-links ul li a {
+    text-decoration: none;
+    color: #1d1b91;
+  }
+  
+  .footer-links ul li a:hover {
+    color: #007bff;
+  }
+  
+  .footer-credits {
+    text-align: center;
+    font-size: 14px;
+    color: #1d1b91;
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-links {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      gap: 20px; /* Add spacing between sections */
+      margin-bottom: 20px; /* Add spacing from credits */
+    }
+    
+    .footer-links div ul li a {
+      font-size: 14px; /* Adjust link size for smaller screens */
+   }
+    
+   }
+   
+  
